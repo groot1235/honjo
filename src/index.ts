@@ -7,6 +7,12 @@ app.get('/', (c) => {
   return c.text('Hello Hono!')
 })
 
+app.get('/macro', (c) => {
+  return c.text('polo')
+})
+
+export default app
+
 serve({
   fetch: app.fetch,
   port: 3000
